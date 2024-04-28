@@ -1,0 +1,78 @@
+section.shopping-card{
+    display: inline-block;
+}
+
+section.shopping-card table{
+    background-color: #ececec;
+}
+
+section.shopping-card table th,
+section.shopping-card table td{
+    padding: 10px 15px;
+    text-align: left;
+}
+
+section.shopping-card table th{
+    background-color: #555555;
+    color: #efefef;
+}
+
+section.shopping-card table th:nth-child(3),
+section.shopping-card table td:nth-child(3){
+    text-align: center;
+}
+
+section.shopping-card table tfoot th,
+section.shopping-card table th:nth-child(3) ~ th,
+section.shopping-card table td:nth-child(3) ~ td {
+    text-align: right;
+}
+
+section.shopping-card table tbody tr:hover{
+    background-color: #0044ef;
+    color: #efefef;
+    cursor: pointer;
+}
+
+section.shopping-card table tbody tr:nth-child(odd){
+    background-color: #cccccc;
+}
+
+section.shopping-card .buttons{
+    text-align: right;
+    margin-top: 20px;
+}
+
+section.shopping-card .buttons button{
+    background-color: #0044ef;
+    padding: 10px 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+section.shopping-card .buttons button:hover{
+    background-color: #0044ef;
+    color: #efefef;
+}
+
+section.shopping-card .buttons button:first-child::before{
+    content: "\f07a";
+    font: var(--fa-font-solid);
+    margin-right: 10px;
+}
+
+section.shopping-card .buttons button:last-child::before{
+    content: "\f09d";
+    font: var(--fa-font-solid);
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+

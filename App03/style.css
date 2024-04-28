@@ -1,0 +1,28 @@
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card div{
+    padding: 0 20px;
+}
+
+.card button{
+    background-color: wheat;
+    border: 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card button:hover{
+    color: rgb(38, 0, 255);
+    background: rgb(59, 255, 24)
+}

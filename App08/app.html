@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+</head>
+<body>
+    
+    <h2>Alışveriş Sepeti</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Ürün Kodu</th>
+          <th>Ürün Adı</th>
+          <th>Miktar</th>
+          <th>Birim Fiyat</th>
+          <th>Ara Toplam</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Buraya ürünler eklenecek -->
+      </tbody>
+      <tfoot>
+        <tr class="total">
+          <td colspan="4">Toplam Ürün Fiyati:</td>
+          <td id="total-price">0 TL</td>
+        </tr>
+      </tfoot>
+    </table>
+    
+    <div class="buttons">
+      <button id="continue-shopping">Alişverişe Devam</button>
+      <button id="proceed-to-payment">Ödemeye Geç</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const products = [
+            { kod: '001', ad: 'Notebook', miktar: 2, fiyat: 46000 },
+            { kod: '002', ad: 'Monitor', miktar: 1, fiyat: 70000 },
+            { kod: '003', ad: 'Klavye', miktar: 3, fiyat: 2000 },
+            { kod: '004', ad: 'CPU', miktar: 1, fiyat: 10000 },
+            { kod: '005', ad: 'Ekran karti', miktar: 2, fiyat: 15000 }
+          ];
+      
+          const tbody = document.querySelector('tbody');
+          const totalPriceElement = document.getElementById('total-price');
+      
+          let totalPrice = 0;
+      
+          products.forEach(product => {
+            const subtotal = product.miktar * product.fiyat;
+            totalPrice += subtotal;
+      
+            const tr = document.createElement('tr');
+            tr.innerHTML = `
+              <td>${product.kod}</td>
+              <td>${product.ad}</td>
+              <td>${product.miktar}</td>
+              <td>${product.fiyat} TL</td>
+              <td>${subtotal} TL</td>
+            `;
+            tbody.appendChild(tr);
+          });
+      
+          totalPriceElement.textContent = `${totalPrice} TL`;
+      
+          const continueShoppingButton = document.getElementById('continue-shopping');
+          continueShoppingButton.addEventListener('click', function () {
+            alert('Alışverişe devam ediliyor...');
+          });
+      
+          const proceedToPaymentButton = document.getElementById('proceed-to-payment');
+          proceedToPaymentButton.addEventListener('click', function () {
+            alert('Ödemeye geçiliyor...');
+          });
+        });
+      </script>
+      
+
+</body>
+</html>
