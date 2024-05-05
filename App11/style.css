@@ -1,0 +1,79 @@
+
+body{
+    padding: 20px;
+    background-color: navy;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sign-in-form{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ececec;
+}
+
+.sign-in-form .left{
+    flex: 1 1 200px;
+    padding: 10px;
+}
+
+.sign-in-form .left form{
+    text-align: center;
+    padding: 50px;
+}
+
+.sign-in-form .left form h2{
+    margin-bottom: 40px;
+}
+
+.sign-in-form .left form .form-row{
+    margin-bottom: 20px;
+}
+
+.sign-in-form .left form input{
+    background: none;
+    border: 0;
+    border-bottom: 1px solid #cccccc;
+    padding: 5px;
+    font-size: 0.7rem;
+    width: 100%;
+}
+
+.sign-in-form .left form button{
+    margin-top: 70px;
+    background-color: navy;
+    padding: 15px 35px;
+    border: 0;
+    color: #cccccc;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.sign-in-form .right{
+    flex: 1 1 500px;
+    background-image: url("../img/win11.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 20px;
+}
+
+.sign-in-form .right h2{
+    margin: 0;
+    font-size: 2rem;
+    text-shadow: 0 0 10px navy;
+    font-weight: 800;
+}
+
+.sign-in-form .right p{
+    margin: 0;
+}

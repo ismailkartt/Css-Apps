@@ -1,0 +1,104 @@
+.card{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.leftCard, .rightCard {
+    flex: 1; 
+    padding: 0;
+    margin: 0;
+}
+
+.leftCard{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+.upperLeftCorner{
+    display: flex; 
+    align-items: center;
+    padding: 10px 10px;
+    font-size: 1rem; 
+}
+
+.upperLeftCorner::before{
+    content: '<';
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    text-align: center;
+    border: 1px solid black;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 5px;
+}
+
+.leftCardHeader{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.leftCardInput input{
+    display: block;
+    margin-bottom: 10px;
+    width: 80%;
+    margin: 0 auto 15px;
+    border: none;
+    border-bottom: 0.8px solid rgba(128, 128, 128, 0.716);
+    font-size: 1rem;
+}
+
+.leftCardInput input::placeholder{
+    font-size: 12px;
+}
+
+.leftCard button{
+    display: block; 
+    margin: 0 auto 10px; 
+    background-color: rgb(178, 52, 178);
+    color: white;
+    border-radius: 5px;
+    padding: 8px;
+    border: none;   
+}
+
+.rightCard {
+    position: relative;
+}
+
+.image-container {
+    position: relative; 
+    display: inline-block; 
+}
+
+.overlay {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center; 
+    color: white; 
+}
+
+.overlay h2,
+.overlay p {
+    margin: 0; 
+}
+
+.rightCard img {
+    object-fit: cover;
+    width: 100%; 
+    height: 100%; 
+
+}
+
+
+
