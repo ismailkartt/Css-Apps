@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+}
+
+header .leftImg {
+  background-image: url("../img/Microsoft.png");
+  background-size: cover;
+  width: 550px;
+  height: 100px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+header .menu ul {
+  display: flex;
+  margin: 0;
+  list-style-type: none;
+}
+
+header .menu ul li a {
+  color: black;
+  padding: 12px;
+  background-color: aqua;
+  text-decoration: none;
+  border: 1px solid black;
+  margin-right: 20px;
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+header .menu ul li a:hover {
+  background-color: bisque;
+}
+
+main {
+  margin-top: 180px; 
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main .left, main .right {
+  padding: 20px; /* Boşluk eklemek için */
+  box-sizing: border-box; /* Padding'in genişliği üzerine eklenmesini sağlar */
+}
+
+main .left {
+  flex-basis: 60%;
+ 
+}
+
+main .right {
+  flex-basis: 40%;
+  background-color: rgb(214, 213, 211);
+  flex: 1;
+}
+
+
+main .left .content {
+  display: flex;
+}
+
+main .left .img {
+  background-image: url("../img/xbox.webp");
+  background-size: cover;
+  width: 20%;
+  height: 220px;
+  margin-right: 20px; 
+  flex-wrap: wrap;
+}
+
+main .left .text {
+  margin: 0;
+  width: 70%; 
+}
+
+main .right .img{
+  background-image: url("../img/Microsoft.png");
+  background-size: cover;
+  width: 550px;
+  height: 100px;
+  margin: 10px;
+}
+
+main .right p{
+  display: flex;
+  width: 80%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(214, 213, 211);
+  width: 100%;
+  height: 320px;
+  display: flex;
+}
+
+footer .left{
+  background-image: url("../img/Microsoft.png");
+  background-size: cover;
+  width: 500px;
+  height: 120px;
+  margin: 15px; 
+  flex-basis: 33%;
+  justify-content: center;
+  
+}
+
+footer .middle{
+  flex-basis: 33%;
+  display: flex;
+  align-items: center;
+}
+
+footer .right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 200px;
+}
+
+footer .menu ul {
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  list-style-type: none;
+}
+
+footer .menu ul li a {
+  color: navy;
+  padding: 12px;
+  border: 1px solid black;
+  margin-right: 20px;
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+footer .menu ul li a:hover {
+  background-color: rgb(196, 224, 255);
+}
