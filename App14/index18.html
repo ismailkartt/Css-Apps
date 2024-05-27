@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive - CSS Units</title>
+
+    <style>
+        /* Responsive units: em,rem,%,vw,vh */
+
+        /* html{
+            font-size: 20px;
+        } */
+
+        /* div{
+            font-size: 1.5em; /* 24px 
+        } */
+
+        /* p{
+            font-size: 1.5em; /* 36px 
+        } */
+
+        /* p{
+            font-size: 1.5rem;
+            padding: 1.5em;
+        } */
+
+        /* p{
+            font-size: 50%;
+        } */
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div{
+            width: 40vw;
+            height: 10vh;
+            background-color: #a7a7a7;
+        }
+
+        .background{
+            background: url("../img/pexels-miami302-22805588.jpg") center center no-repeat;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            color: #fff;
+            align-items: center;
+            padding: 10rem;
+        }
+
+        h1{
+            margin-bottom: 1rem;
+            font-size: 3rem;
+        }
+
+        p{
+            font-size: 2rem;
+            letter-spacing: 1px;
+        }
+
+        @media(max-width:500px){
+            h1{
+                margin-bottom: 0.5rem;
+                font-size: 2rem;
+            }
+            p{
+                font-size: 1rem;
+                display: none;
+            }
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, fugit?</p>
+    </div> -->
+
+    <div class="background">
+        <h1>Welcome To the Side</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, illum.</p>
+    </div>
+
+
+</body>
+</html>
